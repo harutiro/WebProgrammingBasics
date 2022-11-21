@@ -5,5 +5,5 @@ console.log(book);
 
 const person = {name: "Alice", age: 20}
 person.name = "Bob";
-person["age"] = 21;
+person["age"] = 25;
 console.log(person);
