@@ -110,3 +110,5 @@ function init() {
     const regexEnter = new RegExp('(=|Enter)');
 
 }
+
+//localStorage
