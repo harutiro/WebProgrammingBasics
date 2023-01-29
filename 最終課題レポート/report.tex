@@ -60,25 +60,28 @@
 そのため、単語を登録する編集画面と、単語をクイズするクイズ画面がある。
 
 \begin{figure}[htbp]
-    \begin{minipage}{0.5\hsize}
-        \begin{center}
-            \includegraphics[width=70mm]{./img/edit_screen.png}
-        \end{center}
-        \caption{編集画面}
-    \end{minipage}
-    \begin{minipage}{0.5\hsize}
-        \begin{center}
-            \includegraphics[width=70mm]{./img/quiz_screen.png}
-        \end{center}
-        \caption{クイズ画面}
-    \end{minipage}
+    \begin{center}
+        \includegraphics[width=100mm]{./img/edit_screen.png}
+    \end{center}
+    \caption{編集画面}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/quiz_screen.png}
+    \end{center}
+    \caption{クイズ画面}
 \end{figure}
 
 \subsection{編集画面}
 編集画面では、単語とその意味を登録することができる。
 単語とその意味を登録すると、クイズの自動生成ができるかどうかを判定する。
-クイズの自動生成ができる単語は、今回APIで使用したWordVecの単語ベクトルに含まれている単語である。
-Word2Vecの詳しい説明は、節\ref{sec:Word2Vec}に記載する。
+
+クイズの自動生成ができる単語は、今回APIで使用したWord2Vecの単語ベクトルに含まれている単語である。
+Word2vecとは、文章中の単語を数値ベクトルに変換してその意味を把握する自然言語処理の手法である。
+数値ベクトルに変換を行っているため、演算処理をすることが可能で、cos類似度を用いることで単語の近侍度を求めることができる。
+今回使用したWord2Vecのサンプルデータは日本語Wikipediaのサイトを用いているため、日本語以外の単語は対応していない場合が多い。
+対応していない単語を用いると自動でクイズを生成することができないため、対応していない単語を登録されないようにエラー処理を行う。
 クイズの自動生成ができない単語のエラー画面は図\ref{fig:quiz_error}に示す。
 エラーを表示することにより、クイズの自動生成ができない単語を登録することを防ぎ、クイズの自動生成ができる単語のみを登録することができる。
 
@@ -99,6 +102,8 @@ Word2Vecの詳しい説明は、節\ref{sec:Word2Vec}に記載する。
 クイズは3択クイズで、単語の意味を選択することができる。
 クイズの自動生成は、Word2Vecの単語ベクトルを用いて行う。
 正解の単語の意味に近い単語を50件取得し、その単語の中から二種類選択肢として表示する。
+
+クイズは、回答をすると正誤に合わせた効果音を流すようにし、ユーザーエクスペリエンスを高めるように設計を行なった。
 
 最後のクイズが終わった後に、クイズを終了したアナウンスを表示する。
 
@@ -129,7 +134,9 @@ Word2Vecの詳しい説明は、節\ref{sec:Word2Vec}に記載する。
 Word2Vecを用いることで、単語の意味を入力するだけで、単語の意味に近い単語を取得することができ、簡単にクイズを作成することができる。
 
 機能面は、単語を登録し、クイズをするという中核をなす部分は完成している。
+エラー処理なども行うことで、ユーザーがエクスペリエンスを上げることに成功し、満足のいくアプリケーションを作成することができた。
 
+しかし、きめ細かい機能を追加することができなかったので、次の節では改善点を述べていく。
 
 
 \subsection{改善点}
@@ -145,9 +152,66 @@ Word2Vecを用いることで、単語の意味を入力するだけで、単語
 
 \section{付録}
 
-\subsection{Word2Vec}\label{sec:Word2Vec}
-
 \subsection{API通信部分}
+
+今回Word2Vecと通信を行うために、axiosを用いてAPI通信を行なった。
+axiosを用いるメリットとして、使いやすく軽量である点、自動的なJSONデータ変換を行う点、
+Promise APIにサポートしている点などがあるため本プログラムに採用した。
+
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/axios.png}
+    \end{center}
+    \caption{axiosを使用しているコード}
+\end{figure}
+
+
+
+\subsection{データクラスについて}
+
+今後コードを更新するにあたり、わかりやすいソースコードを書く必要がある。
+ソースコードをわかりやすく書くためには、明示的にデータを定義する必要がある。
+そのため、データクラスを擬似的に定義を行い、ソースコードの可読性を高めた。
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/model.png}
+    \end{center}
+    \caption{データクラスの定義部分}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/new_word.png}
+    \end{center}
+    \caption{データクラスの使用部分}
+\end{figure}
+
+\subsection{cssについて}
+今回、わかりやすいUIを作成するため、クラウドベースのユーザーインターフェイスデザインツールである、Figmaを用いてUI設計を行なった。
+UI設計をするにあたり、マテリアルデザインに準拠をしどんなユーザーにも直感的に操作ができるようなデザインを心がけた。
+
+統一されたデザインを作成するため、bootstrapを用いて開発を行なった。
+classを使用するだけで簡単にcssを記載することができるためとても便利である。
+
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/bootstrap.png}
+    \end{center}
+    \caption{Bootstrapの公式ページ}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[width=100mm]{./img/ptag.png}
+    \end{center}
+    \caption{Bootstrapを用いてcssを記載している例}
+\end{figure}
+
+
+
 
 
 

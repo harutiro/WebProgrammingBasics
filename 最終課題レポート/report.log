@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.11.29)  30 JAN 2023 01:43
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.11.29)  30 JAN 2023 04:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -227,57 +227,47 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: ./img/edit_screen.png Graphic file (type bmp)
 <./img/edit_screen.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 67.
+(Font)              scaled to size 8.64899pt on input line 66.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 67.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 68.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 68.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 68.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 68.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 68.
+(Font)              scaled to size 8.64899pt on input line 66.
 File: ./img/quiz_screen.png Graphic file (type bmp)
 <./img/quiz_screen.png>
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 63--75
-[][]$[]$[] []$[]$[] 
- []
-
+ [1]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 77.
+(Font)              scaled to size 11.53198pt on input line 76.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 77.
+(Font)              scaled to size 11.53198pt on input line 76.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 77.
+(Font)              scaled to size 11.53198pt on input line 76.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 77.
+(Font)              scaled to size 11.53198pt on input line 76.
 File: ./img/error_popup.png Graphic file (type bmp)
 <./img/error_popup.png>
-[1]
 File: ./img/question.png Graphic file (type bmp)
 <./img/question.png>
 File: ./img/question_end.png Graphic file (type bmp)
 <./img/question_end.png>
- [2] [3] (./report.aux) ) 
+ [2]
+File: ./img/axios.png Graphic file (type bmp)
+<./img/axios.png>
+ [3]
+File: ./img/model.png Graphic file (type bmp)
+<./img/model.png>
+File: ./img/new_word.png Graphic file (type bmp)
+<./img/new_word.png>
+ [4]
+File: ./img/bootstrap.png Graphic file (type bmp)
+<./img/bootstrap.png>
+File: ./img/ptag.png Graphic file (type bmp)
+<./img/ptag.png>
+ [5] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2628 strings out of 475430
- 38681 string characters out of 5788199
- 389102 words of memory out of 5000000
- 24338 multiletter control sequences out of 15000+600000
- 483665 words of font info for 97 fonts, out of 8000000 for 9000
+ 2603 strings out of 475430
+ 38457 string characters out of 5788199
+ 390102 words of memory out of 5000000
+ 24330 multiletter control sequences out of 15000+600000
+ 478749 words of font info for 75 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,5n,62p,271b,391s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,5n,62p,271b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.dvi (4 pages, 7784 bytes).
+Output written on report.dvi (6 pages, 11788 bytes).
