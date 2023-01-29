@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.11.29)  30 JAN 2023 04:26
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.11.29)  30 JAN 2023 04:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -227,20 +227,20 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: ./img/edit_screen.png Graphic file (type bmp)
 <./img/edit_screen.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
+(Font)              scaled to size 8.64899pt on input line 65.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
+(Font)              scaled to size 8.64899pt on input line 65.
 File: ./img/quiz_screen.png Graphic file (type bmp)
 <./img/quiz_screen.png>
  [1]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 76.
+(Font)              scaled to size 11.53198pt on input line 75.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 76.
+(Font)              scaled to size 11.53198pt on input line 75.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 76.
+(Font)              scaled to size 11.53198pt on input line 75.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 76.
+(Font)              scaled to size 11.53198pt on input line 75.
 File: ./img/error_popup.png Graphic file (type bmp)
 <./img/error_popup.png>
 File: ./img/question.png Graphic file (type bmp)
@@ -270,4 +270,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  55i,5n,62p,271b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.dvi (6 pages, 11788 bytes).
+Output written on report.dvi (6 pages, 11904 bytes).
